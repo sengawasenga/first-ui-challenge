@@ -1,0 +1,117 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	position: relative;
+	min-height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+		center / cover url(bible.jpg);
+}
+
+.header-content {
+	margin: 0 10%;
+}
+
+.navbar {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding-top: 20px;
+	height: 10vh;
+}
+
+.navbar .brand a {
+	color: whitesmoke;
+	font-weight: 700;
+	font-size: 1.7rem;
+	text-decoration: none;
+}
+
+.navbar nav a,
+.navbar nav button {
+	color: whitesmoke;
+	font-size: 0.9rem;
+	text-decoration: none;
+	padding: 0 10px;
+	transition: 0.2s;
+}
+
+.navbar nav a:hover {
+	color: rgb(241, 67, 96);
+	text-decoration: underline;
+}
+
+.navbar nav button {
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.header-body {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	min-height: 90vh;
+}
+
+.header-body-text p {
+	color: whitesmoke;
+	margin-bottom: 5px;
+	font-weight: 700;
+	font-size: 4rem;
+	letter-spacing: 2px;
+}
+
+.header-body-text .text-description {
+	font-size: 3.5rem;
+}
+
+.header-body-links {
+	margin-top: 2.5rem;
+}
+
+.header-body-links button {
+	margin: 0 10px 10px 0;
+	padding: 12px 17px;
+	text-transform: uppercase;
+	outline: none;
+	color: #fff;
+	font-size: 0.9rem;
+	background: none;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.header-body-links button:hover {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.header-body-links .pink-button {
+	background: rgb(241, 67, 96);
+	border: 1px solid rgb(241, 67, 96);
+}
+
+@media (max-width: 1100px) {
+	.navbar nav a {
+		display: none;
+	}
+
+	.header-body-text p {
+		font-size: 3rem;
+	}
+
+	.header-body-text .text-description {
+		font-size: 2.5rem;
+	}
+}
